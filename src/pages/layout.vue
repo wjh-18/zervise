@@ -17,10 +17,10 @@ export default {
   components: {
     HeaderBar
   },
-  data () {
+  data() {
     return {}
   },
-  mounted () {},
+  mounted() {},
   methods: {}
 }
 </script>
@@ -31,5 +31,9 @@ export default {
   color: #fff;
   text-align: center;
   line-height: 60px;
+}
+.el-main {
+  padding: 20px;
+  background: #f4f4f4;
 }
 </style>

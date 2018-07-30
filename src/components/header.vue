@@ -16,7 +16,7 @@
 
                   </el-col>
                   <el-col :span="12">
-                        <el-menu class="el-menu" mode="horizontal" background-color="#092344" text-color="#fff" active-text-color="#e6a23c">
+                        <el-menu class="el-menu" mode="horizontal" background-color="#092344" text-color="#fff" active-text-color="#fff">
                               <el-submenu index="2">
                                     <template slot="title">游客，欢迎您！</template>
 
@@ -24,7 +24,7 @@
                                           <router-link :to="{ path:'/login' }" class="el-menu-horizontal-li-a">登陆 </router-link>
                                     </el-menu-item>
                                     <el-menu-item index="2-2">
-                                          <router-link :to="{ path:'/login' }" class="el-menu-horizontal-li-a">联系我们 </router-link>
+                                          <router-link :to="{ path:'/contact' }" class="el-menu-horizontal-li-a">联系我们 </router-link>
                                     </el-menu-item>
                               </el-submenu>
                         </el-menu>
@@ -35,13 +35,13 @@
 </template>
 <script>
 export default {
-  data () {
+  data() {
     return {
       language: '中文'
     }
   },
   methods: {
-    selectLanguage (e) {
+    selectLanguage(e) {
       this.language = e
     }
   }
@@ -52,11 +52,13 @@ export default {
 .el-dropdown {
   height: 35px;
   color: #fff;
+  cursor: pointer;
 }
 .el-menu {
   float: right;
 }
 .el-menu a {
+  display: block;
   color: #fff;
 }
 </style>
