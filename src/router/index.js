@@ -12,6 +12,7 @@ export default new Router({
       path: '/',
       name: 'manage',
       component: Layout,
+      redirect: '/login',
       children: [
         {
           path: '/login',

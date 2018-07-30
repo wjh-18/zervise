@@ -65,7 +65,7 @@ export default {
             required: true,
             message: '请填写有效的邮箱地址',
             trigger: 'blur'
-          } ,
+          },
           {
             type: 'email',
             trigger: 'change',
